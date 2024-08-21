@@ -4,7 +4,7 @@ public class ScopeEx1 {
     public static void main(String[] args) {
         int a = 25;
         int c;
-        int d;
+        int d = 0;
         {
             int b = 35;
             System.out.println(b);

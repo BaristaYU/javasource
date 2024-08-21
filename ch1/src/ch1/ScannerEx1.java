@@ -1,6 +1,5 @@
 package ch1;
 
-import java.time.LocalDate;
 import java.util.*;
 
 public class ScannerEx1 {
