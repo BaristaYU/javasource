@@ -37,8 +37,6 @@ public class SwitchEx4 {
                 int nam = num1 % num2;
                 System.out.printf("%d % %d = %d", num1, num2, nam);
                 break;
-            default:
-                break;
         }
 
         sc.close();
