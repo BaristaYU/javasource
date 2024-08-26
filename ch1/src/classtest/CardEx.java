@@ -19,5 +19,17 @@ public class CardEx {
         Card.height = 300;
         System.out.println("카드 width : " + Card.width);
         System.out.println("카드 height : " + Card.height);
+
+        firstMethod();
+        CardEx obj = new CardEx();
+        obj.secondMethod();
+    }
+
+    static void firstMethod() {
+
+    }
+
+    void secondMethod() {
+
     }
 }

@@ -31,9 +31,11 @@ public class Student {
     }
 
     public Student(String hakbun, String name, String address, String mobile) {
-        this.hakbun = hakbun;
-        this.name = name;
-        this.address = address;
+        // this.hakbun = hakbun;
+        // this.name = name;
+        // this.address = address;
+        // this.mobile = mobile;
+        this(hakbun, name, address);
         this.mobile = mobile;
     }
 
