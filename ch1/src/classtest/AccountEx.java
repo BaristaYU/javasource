@@ -11,5 +11,10 @@ public class AccountEx {
         Account.deposit(100000, 50000);
         System.out.println(Account.withdraw(100000, 50000));
 
+        printAccount(acc);
+    }
+
+    static void printAccount(Account acc) {
+
     }
 }

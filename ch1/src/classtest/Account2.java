@@ -1,11 +1,11 @@
 package classtest;
 
-public class Account {
+public class Account2 {
     private String accountNo;
     private String owner;
     private long balance;
 
-    public Account(String accountNo, String owner, long balance) {
+    public Account2(String accountNo, String owner, long balance) {
         this.accountNo = accountNo;
         this.owner = owner;
         this.balance = balance;
@@ -39,6 +39,11 @@ public class Account {
     static long withdraw(long balance, long with) {
         balance -= with;
         return balance;
+    }
+
+    @Override
+    public String toString() {
+        return "Account2 [accountNo=" + accountNo + ", owner=" + owner + ", balance=" + balance + "]";
     }
 
 }
