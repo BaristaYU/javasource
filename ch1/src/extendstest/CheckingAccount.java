@@ -17,4 +17,8 @@ public class CheckingAccount extends Account {
         }
         return getBalance();
     }
+
+    public String getCardNo() {
+        return cardNo;
+    }
 }
