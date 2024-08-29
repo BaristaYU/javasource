@@ -5,5 +5,8 @@ public class ProductEx {
         Buyer buyer = new Buyer();
 
         buyer.buy(new Computer());
+        buyer.buy(new Air());
+
+        buyer.summary();
     }
 }
