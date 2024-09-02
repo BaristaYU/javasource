@@ -1,6 +1,8 @@
 package api;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -33,6 +35,11 @@ public class ListEx {
         System.out.println(list.contains("포도"));
 
         list.sort(Comparator.reverseOrder());
-        Comparator.naturalOrder()
+        Comparator.naturalOrder();
+
+        Collections.sort(list);
+        Collections.sort(list, Comparator.reverseOrder());
+        System.out.println(list);
+
     }
 }

@@ -6,6 +6,104 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AccountEx",
+            "request": "launch",
+            "mainClass": "exception.AccountEx",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionEx5",
+            "request": "launch",
+            "mainClass": "exception.ExceptionEx5",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionEx4",
+            "request": "launch",
+            "mainClass": "exception.ExceptionEx4",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionEx2",
+            "request": "launch",
+            "mainClass": "exception.ExceptionEx2",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionEx1",
+            "request": "launch",
+            "mainClass": "exception.ExceptionEx1",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "ShopEx",
+            "request": "launch",
+            "mainClass": "shop.ShopEx",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "MapEx1",
+            "request": "launch",
+            "mainClass": "api.MapEx1",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "ArraysEx2",
+            "request": "launch",
+            "mainClass": "api.ArraysEx2",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "ArraysEx",
+            "request": "launch",
+            "mainClass": "api.ArraysEx",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "SetEx2",
+            "request": "launch",
+            "mainClass": "api.SetEx2",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "SetEx1",
+            "request": "launch",
+            "mainClass": "api.SetEx1",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "StackEx",
+            "request": "launch",
+            "mainClass": "api.StackEx",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "LinkedListEx2",
+            "request": "launch",
+            "mainClass": "api.LinkedListEx2",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "ListEx3",
+            "request": "launch",
+            "mainClass": "api.ListEx3",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
             "name": "ListEx2",
             "request": "launch",
             "mainClass": "api.ListEx2",
