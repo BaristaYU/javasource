@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FileEx",
+            "request": "launch",
+            "mainClass": "io.FileEx",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
+            "name": "FruitBoxEx",
+            "request": "launch",
+            "mainClass": "generics.FruitBoxEx",
+            "projectName": "javasource_a7040f79"
+        },
+        {
+            "type": "java",
             "name": "AccountEx",
             "request": "launch",
             "mainClass": "exception.AccountEx",
