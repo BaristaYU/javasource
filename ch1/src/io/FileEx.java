@@ -21,6 +21,6 @@ public class FileEx {
         System.out.println("File.pathSeparatorChar : " + File.pathSeparatorChar);
         System.out.println("File.separator(이름구분자) : " + File.separator);
         System.out.println("File.separatorChar : " + File.separatorChar);
-
+        System.out.println();
     }
 }
