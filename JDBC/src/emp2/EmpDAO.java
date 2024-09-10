@@ -148,14 +148,25 @@ public class EmpDAO {
         return list;
     }
 
-    public boolean empUpdate() {
+    public boolean empUpdate(EmpDTO dto) {
         boolean flag = false;
         try {
+            con = getConnection();
 
+            String sql = "UPDATE emp_temp SET COMM = ?, sal = ? WHERE empno=?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, dto.getComm());
+            pstmt.setInt(2, dto.getSal());
+            pstmt.setInt(3, dto.getEmpno());
+
+            int result = pstmt.executeUpdate();
+            if (result > 0) {
+                flag = true;
+            }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-
+            close(con, pstmt);
         }
         return flag;
     }
