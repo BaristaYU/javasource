@@ -32,17 +32,17 @@ public class InsertEx2 {
             int empno = Integer.parseInt(sc.nextLine());
             System.out.print("이름: ");
             String ename = sc.nextLine();
-            System.out.println("직무: ");
+            System.out.print("직무: ");
             String job = sc.nextLine();
-            System.out.println("매니저번호: ");
+            System.out.print("매니저번호: ");
             int mgr = Integer.parseInt(sc.nextLine());
-            System.out.println("입사일: ");
+            System.out.print("입사일: ");
             String hiredate = sc.nextLine();
-            System.out.println("급여: ");
+            System.out.print("급여: ");
             int sal = Integer.parseInt(sc.nextLine());
-            System.out.println("수당: ");
+            System.out.print("수당: ");
             int comm = Integer.parseInt(sc.nextLine());
-            System.out.println("부서번호: ");
+            System.out.print("부서번호: ");
             int deptno = Integer.parseInt(sc.nextLine());
 
             String sql = "INSERT INTO emp_temp(empno,ename,job,mgr,hiredate,sal,comm,deptno) VALUES(?,?,?,?,?,?,?,?)";

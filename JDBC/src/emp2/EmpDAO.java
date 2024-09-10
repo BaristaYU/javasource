@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class EmpDAO {
     // CRUD 작업을 위한 메소드 작성
@@ -78,6 +80,82 @@ public class EmpDAO {
             e.printStackTrace();
         } finally {
             close(con, pstmt);
+        }
+        return flag;
+    }
+
+    public EmpDTO getEmp(int empno) {
+        EmpDTO dto = null;
+
+        try {
+            con = getConnection();
+
+            String sql = "SELECT * FROM emp_temp WHERE empno=?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, empno);
+            rs = pstmt.executeQuery();
+
+            if (rs.next()) {
+                dto = new EmpDTO();
+                dto.setEmpno(rs.getInt(1));
+                dto.setEname(rs.getString(2));
+                dto.setJob(rs.getString(3));
+                dto.setMgr(rs.getInt(4));
+                dto.setHiredate(rs.getString(5));
+                dto.setSal(rs.getInt(6));
+                dto.setComm(rs.getInt(7));
+                dto.setDeptno(rs.getInt(8));
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            close(con, pstmt, rs);
+        }
+        return dto;
+    }
+
+    public List<EmpDTO> getList() {
+        List<EmpDTO> list = new ArrayList<>();
+        EmpDTO dto = null;
+        try {
+            con = getConnection();
+
+            String sql = "SELECT * FROM emp_temp";
+            pstmt = con.prepareStatement(sql);
+            rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                dto = new EmpDTO();
+                dto.setEmpno(rs.getInt(1));
+                dto.setEname(rs.getString(2));
+                dto.setJob(rs.getString(3));
+                dto.setMgr(rs.getInt(4));
+                dto.setHiredate(rs.getString(5));
+                dto.setSal(rs.getInt(6));
+                dto.setComm(rs.getInt(7));
+                dto.setDeptno(rs.getInt(8));
+
+                list.add(dto);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            close(con, pstmt, rs);
+        }
+
+        return list;
+    }
+
+    public boolean empUpdate() {
+        boolean flag = false;
+        try {
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+
         }
         return flag;
     }
